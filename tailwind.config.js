@@ -9,7 +9,8 @@ export default {
       backgroundImage: {
         convite_desktop: "URL('/bg_desktop.png')",
         convite_mobile: "URL('/bg_mobile.png')",
-        convite: "URL('/bg_convite.png')",
+        desktop_clean: "URL('/bg_desktop_clean.png')",
+        mobile_clean: "URL('/bg_mobile_clean.png')",
         // convite: "URL('/convite.png')"
       },
       backgroundSize: {

@@ -12,13 +12,8 @@ export function ConfeteComponent(
 
   const playAudio = () => {
     if (audioRef.current) {
-      audioRef.current.currentTime = 0; // Recomeça o áudio do início
+      audioRef.current.currentTime = 0; 
       audioRef.current.play();
-      setTimeout(() => {
-        if (audioRef.current) {
-          audioRef.current.pause();
-        }
-      }, 10000); // 10000 milissegundos = 10 segundos
     }
   };
 
@@ -29,10 +24,13 @@ export function ConfeteComponent(
 
   return (
     <>
-    <Confetti mode="fall" particleCount={150} colors={['#ff577f', '#ff884b', '#ffd384', '#fff9b0']} />
+      <Confetti
+        mode="fall"
+        particleCount={150}
+        colors={["#ff577f", "#ff884b", "#ffd384", "#fff9b0"]}
+      />
 
-
-    <audio ref={audioRef} src="/confetes.mpeg" />
+      <audio ref={audioRef} src="/confetes.mpeg" />
     </>
   );
 }

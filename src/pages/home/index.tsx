@@ -1,11 +1,9 @@
-import { useRef, useState } from "react";
+import {  useState } from "react";
 import { ConfeteComponent } from "../../components";
 import { useNavigate } from "react-router-dom";
 
 
 export function HomePage() {
-
-  const audioRef = useRef<HTMLAudioElement>(null);
 
   const [isVisible, setIsVisible] = useState<boolean>(false)
   const navigate = useNavigate()
@@ -14,18 +12,10 @@ export function HomePage() {
     setIsVisible(true)
 
     setTimeout(() => {
-      // setIsVisible(false)
       navigate("/lista")
     }, 4000)
   }
 
-    const playAudio = () => {
-    if (audioRef.current) {
-      audioRef.current.currentTime = 0; // Recomeça o áudio do início
-      audioRef.current.play();
-      audioRef.current.loop = true;
-    }
-  };
 
   return (
     <main className="sm:bg-convite_desktop bg-convite_mobile bg-100% bg-no-repeat bg-center min-h-screen w-full text-white">
@@ -56,9 +46,6 @@ export function HomePage() {
           <button className="bg-blue-400" onClick={handleParticiar}>
             {isVisible ? "Confetes!" : "Quero Participar!"}
           </button>
-          <button onClick={playAudio}>Audio Página</button>
-
-          <audio ref={audioRef} src="/audio.mpeg" />
         </div>
       </div>
     </main>
