@@ -1,1 +1,1 @@
-export * from "./ConfettiComponent"
+export * from "./ConfeteComponent"

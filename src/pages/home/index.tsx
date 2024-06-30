@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ConfettiComponent } from "../../components";
+import { ConfeteComponent } from "../../components";
 import { useNavigate } from "react-router-dom";
 
 
@@ -20,7 +20,7 @@ export function HomePage() {
   return (
     <main className="sm:bg-convite_desktop bg-convite_mobile bg-100% bg-no-repeat bg-center min-h-screen w-full text-white">
       <div className="flex justify-center items-center h-screen">
-        <div className="z-20">{isVisible && <ConfettiComponent />}</div>
+        <div className="z-20">{isVisible && <ConfeteComponent isVisible={isVisible}/>}</div>
 
         <div className="sm:flex-1"></div>
 
