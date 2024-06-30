@@ -32,7 +32,7 @@ export function ConfeteComponent(
     <Confetti mode="fall" particleCount={150} colors={['#ff577f', '#ff884b', '#ffd384', '#fff9b0']} />
 
 
-    <audio ref={audioRef} src="/confetes.mp3" />
+    <audio ref={audioRef} src="/confetes.mpeg" />
     </>
   );
 }
