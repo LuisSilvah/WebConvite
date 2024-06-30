@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        convite_desktop: "URL('./src/assets/bg_convite.png')",
-        convite_mobile: "URL('./src/assets/bg_mobile.png')",
-        convite: "URL('./src/assets/convite.png')"
+        convite_desktop: "URL('/bg_convite.png')",
+        convite_mobile: "URL('/bg_mobile.png')",
+        convite: "URL('/convite.png')"
       },
       backgroundSize: {
         '50%': '50%',

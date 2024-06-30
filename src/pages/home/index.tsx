@@ -18,7 +18,7 @@ export function HomePage() {
   }
 
   return (
-    <main className="sm:bg-convite_desktop bg-convite_mobile bg-100% bg-no-repeat bg-center min-h-screen w-full">
+    <main className="sm:bg-convite_desktop bg-convite_mobile bg-100% bg-no-repeat bg-center min-h-screen w-full text-white">
       <div className="flex justify-center items-center h-screen">
         <div className="z-20">{isVisible && <ConfettiComponent />}</div>
 
